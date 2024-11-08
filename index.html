@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style7.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Contact Us</h1>
+        <form>
+            <div class="flname">
+                <div class="fname">
+                    <label>First Name <span>*</span></label>
+                    <input type="text" id="fname">
+                    <p class="error1 hidden">This field is required</p>
+                </div>
+                <div class="lname">
+                    <label>Last Name <span>*</span></label>
+                    <input type="text" id="lname">
+                    <p class="error2 hidden">This field is required</p>
+                </div>
+            </div>
+            <div class="email">
+                <label>Email Address <span>*</span></label>
+                <input type="email" id="email" name="email">
+                <p class="error3 hidden">Please enter a valid email address</p>
+            </div>
+            <div class="querytypes">
+                <label>Query Type <span>*</span></label>
+                <div class="info">
+                <div class="one">
+                    <input type="radio" id="general" name="type" value="General Enquiry">
+                    <label for="general">General Enquiry</label>
+                </div>
+                <div class="two">
+                    <input type="radio" id="support" name="type" value="Support Request">
+                    <label for="support">Support Request</label>
+                </div>
+                </div>
+                <p class="error4 hidden">Please select a query type</p>
+            </div>
+            <div class="message">
+                <label>Message <span>*</span></label>
+                <textarea name="message" id="message" rows="4"></textarea>
+                <p class="error5 hidden">This field is required</p>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">I consent to being contacted by the team <span>*</span></label>
+            </div>
+            <p class="error6 hidden">To submit this form, please consent to being contacted</p>
+            <button class="submit" type="submit">Submit</button>
+        </form>
+    </main>
+    <div class="succes hidden">
+        <img src="icon-success-check.svg" alt="">
+        Message sent!
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    <script src="main7.js"></script>
+</body>
+</html>

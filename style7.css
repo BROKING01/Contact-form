@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: hsl(148, 38%, 91%);
+    display: grid;
+    place-content: center;
+    font-family: "Karla", sans-serif;
+    margin: 100px 0;
+}
+main{
+    background-color: white;
+    padding: 32px;
+    border-radius: 20px;
+}
+main h1{
+    color: hsl(187, 24%, 22%);
+    padding-bottom: 15px;
+}
+main form .flname{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+main form .email{
+    padding-bottom: 20px;
+}
+main form .info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main form .info .one{
+    padding: 10px 15px;
+    display: flex;
+    outline: 1px solid hsl(169, 82%, 27%);
+    cursor: pointer;
+    gap: 5px;
+    border-radius: 10px;
+}
+main form .info .two{
+    padding: 10px 15px;
+    display: flex;
+    outline: 1px solid hsl(169, 82%, 27%);
+    cursor: pointer;
+    gap: 5px;
+    border-radius: 10px;
+}
+main form .message{
+    margin-bottom: 30px
+}
+main form .check{
+    display: flex;
+    gap: 17px;
+}
+main form .check input{
+    width: 16px;
+    margin-left: 4px;
+}
+main form button{
+    padding: 17px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: hsl(169, 82%, 27%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+main form button:hover{
+    background-color: hsl(169, 76%, 16%);
+}
+input[type='text'],
+input[type='email'],
+textarea{
+    width: 100%;
+    padding: .5rem;
+    margin-top: .5rem;
+    border-radius: .35rem;
+    border: 1px solid hsl(186, 15%, 59%);
+}
+input:focus, textarea:focus{
+    outline: 1px solid hsl(169, 82%, 27%);
+    border: 1px solid hsl(169, 82%, 27%);
+}
+.succes{
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    background-color: hsl(187, 24%, 22%);
+    border-radius: 10px;
+    padding: 15px 20px;
+    left: 35%;
+    top: 9%;
+}
+.succes p{
+    padding-top: 5px;
+}
+.error1{
+    color: red;
+    margin-top: 7px;
+}
+.error2{
+    color: red;
+    margin-top: 7px;
+}
+.error3{
+    color: red;
+    margin-top: 7px;
+}
+.error4{
+    color: red;
+    margin-top: 3px;
+}
+.error5{
+    color: red;
+    margin-top: 7px;
+}
+.error6{
+    color: red;
+    margin-top: 7px;
+}
+.hidden{
+    display: none;
+}
